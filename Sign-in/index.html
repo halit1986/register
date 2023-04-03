@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head> 
+<body>
+    <div id="Sign-in">   <!--SECTİON OF REGİSTER-->
+        <h2 id="kayitol" style="margin: 0; text-align: center;">Register</h2>
+        <form id="Signin">
+            <input id="name" type="text" placeholder="Name and Surname"><br>
+            <input id="username" type="text" placeholder="User Name">
+            <input id="mail" type="email" placeholder="E-mail">
+            <input id="pw" type="password" placeholder="password">
+            <input id="pw2" type="password" placeholder="password repeat">
+            <div class="privacy">
+                <input id="contrat" type="checkbox"><a href="#" style="text-decoration: none; color: rgb(109, 102, 102);">User agreement</a>
+            </div>
+            <div class="butons">
+                <button id="register" type="button" onclick = "getData()" >Register</button>
+                <button id="reset" type="reset">Reset</button>
+            </div>
+        </form>
+
+    </div>
+    <div id="Log-in">   <!--SECTİON OF LOGİN-->
+        <h2 style="margin: 0; text-align: center;">Login</h2>
+        <form id="Login">
+            <input id="usernameLogin" type="text" placeholder="User Name">
+            <input id="userpassword" type="password" placeholder="password">
+            <div class="butons">
+                <button id="login" type="button" onclick="log ()">Login</button>
+                <button id="reset1" type="button" onclick="reflesh()">Cancel</button>
+            </div>
+        </form>
+        <small><a href="#" style="color: red; text-decoration: none;">I forgot my password</a></small>
+
+    </div>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
